@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt + Lime | Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="neon-nav">
+            <div class="nav-container">
+                <ul class="nav-left">
+                    <li><a href="index.html" class="neon-link">Home</a></li>
+                    <li><a href="#menu" class="neon-link">Menu</a></li>
+                    <li><a href="#reserve" class="neon-link">Reserve</a></li>
+                </ul>
+                <div class="logo-section">
+                    <img src="Images/singlelogo.png" alt="Salt + Lime Logo" class="logo">
+                </div>
+                <ul class="nav-right">
+                    <li><a href="shop.html" class="neon-link">Shop</a></li>
+                    <li><a href="gallery.html" class="neon-link">Gallery</a></li>
+                    <li><a href="our-story.html" class="neon-link">Our Story</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h1>Gallery</h1>
+            <div class="masonry">
+                <div class="masonry-item"><img src="Images/S&L_June 21-40.jpg" alt="Salud"></div>
+                <div class="masonry-item"><img src="Images/S&L_June 21-11.jpg" alt="Yummy Tostadas"></div>
+                <div class="masonry-item"><img src="Images/pina coco.jpeg" alt="Put the lime in the coconut"></div>
+                <div class="masonry-item"><img src="Images/la rosa.jpeg" alt="La Rosa"></div>
+                <div class="masonry-item"><img src="Images/S&L_June 21-37.jpg" alt="White Mole Mushroom"></div>
+                <div class="masonry-item"><img src="Images/IMG_8310.jpeg" alt="Nothing beats Del Mar susnsets"></div>
+                <div class="masonry-item"><img src="Images/IMG_1417.jpeg" alt="I'll take a shot and a chaser"></div>
+                <div class="masonry-item"><img src="Images/IMG_6040.jpeg" alt="Our food truck parked at home base"></div>
+                <div class="masonry-item"><img src="Images/IMG_6204.jpeg" alt="Contrast"></div>
+                <div class="masonry-item"><img src="Images/IMG_6253.jpeg" alt="Staying Hydrated"></div>
+                <div class="masonry-item"><img src="Images/IMG_6398.jpeg" alt="Ideal date spot"></div>
+                <div class="masonry-item"><img src="Images/IMG_6410.jpeg" alt="This is what we call a Fiesta"></div>
+                <div class="masonry-item"><img src="Images/IMG_6511.jpeg" alt="No words needed"></div>
+                <div class="masonry-item"><img src="Images/IMG_6737.jpeg" alt="First music night ever held at the restaurant"></div>
+                <div class="masonry-item"><img src="Images/IMG_7053.jpeg" alt="The real mvp's"></div>
+                <div class="masonry-item"><img src="Images/IMG_7010.jpeg" alt="Our Buffett style event"></div>
+                <div class="masonry-item"><img src="Images/IMG_6891 2.jpeg" alt="These need to be at the table, not on the well"></div>
+                <div class="masonry-item"><img src="Images/IMG_6847.jpeg" alt="DJ night at Salt and lime"></div>
+                <div class="masonry-item"><img src="Images/IMG_6790.jpeg" alt="Definitely a great meal"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Salt + Lime. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts/gallery.js"></script>
+    
+    <div class="sticky-footer">
+        <a href="#reserve" class="cta-button">Reserve a Table</a>
+        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
+        <a href="#" class="cta-button" id="events-btn">Book an Event</a>
+    </div>
+</body>
+</html>

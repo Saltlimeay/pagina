@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt + Lime | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/popup-menu.css">
+    <link rel="stylesheet" href="styles/category-menu-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/dessert-popup.css">
+    <link rel="stylesheet" href="styles/events-popup.css">
+<script src="scripts/events-popup.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="neon-nav">
+            <div class="nav-container">
+                <ul class="nav-left">
+                    <li><a href="index.html" class="neon-link">Home</a></li>
+                    <li><a href="#menu" class="neon-link">Menu</a></li>
+                    <li><a href="#reserve" class="neon-link">Reserve</a></li>
+                </ul>
+                <div class="logo-section">
+                    <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
+                </div>
+                <ul class="nav-right">
+                    <li><a href="shop.html" class="neon-link">Shop</a></li>
+                    <li><a href="gallery.html" class="neon-link">Gallery</a></li>
+                    <li><a href="our-story.html" class="neon-link">Our Story</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="video-container">
+                <iframe 
+                    class="hero-video"
+                    src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <div class="floating-coupon-button">
+            <a href="#coupon" class="floating-button">Free Dessert</a>
+        </div>
+        <div class="floating-coupon-button">
+            <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
+        </div>
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-category" data-category="appetizers">
+                    <img src="Images/S&L_June 21-21.jpg" alt="Appetizers">
+                    <h3>Appetizers</h3>
+                </div>
+                <div class="menu-category" data-category="salads">
+                    <img src="Images/S&L_June 21-08.jpg" alt="Salads">
+                    <h3>Salads</h3>
+                </div>
+                <div class="menu-category" data-category="tostadas">
+                    <img src="Images/S&L_June 21-09.jpg" alt="Tostadas">
+                    <h3>Tostadas</h3>
+                </div>
+                <div class="menu-category" data-category="ceviches">
+                    <img src="Images/S&L_June 21-35.jpg" alt="Ceviches">
+                    <h3>Ceviches</h3>
+                </div>
+                <div class="menu-category" data-category="tacos">
+                    <img src="Images/S&L_June 21-23.jpg" alt="Tacos">
+                    <h3>Tacos</h3>
+                </div>
+                <div class="menu-category" data-category="mains">
+                    <img src="Images/S&L_June 21-39.jpg" alt="Mains">
+                    <h3>Mains</h3>
+                </div>
+                <div class="menu-category" data-category="sides">
+                    <img src="Images/sides.jpeg" alt="Sides">
+                    <h3>Sides</h3>
+                </div>
+                <div class="menu-category" data-category="desserts">
+                    <img src="Images/S&L_June 21-48.jpg" alt="Desserts">
+                    <h3>Desserts</h3>
+                </div>
+                <div class="menu-category" data-category="cocktails">
+                    <img src="Images/Screenshot 2024-10-24 at 11.42.22.png" alt="Cocktails">
+                    <h3>Cocktails</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="reserve" class="contact-section">
+            <h2>Reserve a Table</h2>
+            <div class="contact-container">
+                <div class="contact-column">
+                    <div class="reservation-widget">
+                        <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1308934&type=standard&theme=standard&color=2&dark=false&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&cfe=true'></script>
+                    </div>
+                </div>
+                <div class="contact-column">
+                    <div class="contact-details">
+                        <div class="contact-box">
+                            <h3>For private events</h3>
+                            <p><strong>Phone:</strong> (858)925-7093</p>
+                            <p><strong>Email:</strong> saltandlimesd@gmail.com</p>
+                        </div>
+                        <div class="social-media">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="chat-section">
+                            <h3>Have Questions?</h3>
+                            <a href="https://wa.me/2105351095" class="chat-button" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Chat with us now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="Images/IMG_8133 copy.jpeg" alt="Horizontal Image" class="horizontal-image">
+            </div>
+        </section>
+
+        <section id="about" class="story-section">
+            <h2>Our Story: From Truck to Table</h2>
+            <div class="story-grid">
+                <div class="story-item">
+                    <img src="Images/truck.png" alt="Our first food truck">
+                    <p>Where it all began: Our first food truck in 2017</p>
+                </div>
+                <div class="story-item">
+                    <img src="Images/padres.jpg" alt="Our most popular dish">
+                    <p>Our first home</p>
+                </div>
+                <div class="story-item">
+                    <img src="Images/frontal.png" alt="Food truck lineup">
+                    <p>Aesthetics on point</p>
+                </div>
+                <div class="story-item">
+                    <img src="Images/vision.jpg" alt="Restaurant under construction">
+                    <p>seeing the vision</p>
+                </div>
+                <div class="story-item">
+                    <img src="Images/team.JPG" alt="Grand opening">
+                    <p>El Equipo</p>
+                </div>
+                <div class="story-item">
+                    <img src="Images/Restaurant.jpg" alt="Our current restaurant">
+                    <p>Our thriving restaurant today</p>
+                </div>
+            </div>
+            <a href="#full-story" class="story-button">Read Our Full Story</a>
+        </section>
+    </main>
+
+    <div id="category-menu-popup" class="category-menu-popup">
+        <div class="category-menu-popup-content">
+            <button id="close-category-menu" class="close-category-menu">&times;</button>
+            <div class="menu-content-wrapper">
+                <div class="menu-image">
+                    <img src="path/to/your/appetizer-image.jpg" alt="Pa'compartir dishes">
+                </div>
+                <div class="menu-details">
+                    <h2 class="menu-title">Pa'compartir</h2>
+                    <div class="menu-divider"></div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <h3>Guacamole Salt & Lime <span class="price">12</span></h3>
+                            <p>fresh guacamole | homemade chips | chili oil | cilantro baby</p>
+                            <p class="toppings">Toppings: chicharron 5 | birria chicharron 8 | panela cheese 5</p>
+                        </div>
+    
+                        <div class="menu-item">
+                            <h3>Queso Fundido <span class="price">11</span></h3>
+                            <p>melted cheese | homemade tortillas</p>
+                            <p class="toppings">Toppings: chicharron 5 | birria chicharron 8 | mushrooms 6</p>
+                        </div>
+    
+                        <div class="menu-item">
+                            <h3>Sweet & Sour Popcorn Shrimp <span class="price">16</span></h3>
+                            <p>crispy shrimp | chipotle mayo | ancho sweet & sour sesame seeds | chives</p>
+                        </div>
+    
+                        <div class="menu-item">
+                            <h3>Birria Chicharron Huarache <span class="price">15</span></h3>
+                            <p>home made corn tortilla | refried beans | avocado salsa | shredded lettuce | crema | radish</p>
+                        </div>
+    
+                        <div class="menu-item">
+                            <h3>Bone Marrow Quesadilla <span class="price">18</span></h3>
+                            <p>home made corn tortilla | melted cheese | grilled bone marrow | onion | cilantro | red salsa</p>
+                        </div>
+    
+                        <div class="menu-item">
+                            <h3>Potato Taquitos <span class="price">15</span></h3>
+                            <p>mashed potato | shredded lettuce | crema | cotija cheese | pickled onions | green salsa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/home.js"></script>
+    <script src="scripts/popup-menu.js"></script>
+    <script src="scripts/category-menu-popup.js"></script>
+
+    <section class="hours-section">
+        <div class="hours-container">
+            <h2>Hours of Operation</h2>
+            <div class="hours-grid">
+                <div class="hours-column">
+                    <h3>Dining Hours</h3>
+                    <ul>
+                        <li><span class="day">Monday - Thursday:</span> 11:30 AM - 9 PM</li>
+                        <li><span class="day">Friday:</span> 11:30 AM - 9:30 PM</li>
+                        <li><span class="day">Saturday & Sunday:</span> 10:30 AM - 9:30 PM</li>
+                    </ul>
+                </div>
+                <div class="hours-column">
+                    <h3>Happy Hour</h3>
+                    <p>Monday - Sunday: 2:30 PM - 5:30 PM</p>
+                    <p class="note">Friday & Saturday - Bar area only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sticky-footer">
+        <a href="#reserve" class="cta-button">Reserve a Table</a>
+        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
+        <a href="#" class="cta-button" id="events-btn">Book an Event</a>
+    </div>
+    
+    <div id="dessert-popup" class="dessert-popup">
+        <div class="dessert-popup-content">
+            <button class="close-dessert-popup">&times;</button>
+            <h2>Get Your Free Dessert</h2>
+            <p>Enter your contact information to receive your dessert coupon</p>
+            <form id="dessert-form">
+                <div class="form-group">
+                    <input type="text" id="contact-info" required>
+                    <label for="contact-info">Email or Phone Number</label>
+                </div>
+                <button type="submit" class="submit-btn">Get Coupon</button>
+            </form>
+            <div id="success-message" class="success-message" style="display: none;">
+                Thanks! Your coupon code will be sent shortly.
+            </div>
+        </div>
+    </div>
+    <script src="scripts/dessert-popup.js"></script>
+    <div id="events-popup" class="events-popup">
+        <div class="events-popup-content">
+            <button class="close-events-popup">&times;</button>
+            <h2>Private Events Bookings</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <a href="tel:8589257093">(858) 925-7093</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:saltandlimesd@gmail.com">saltandlimesd@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

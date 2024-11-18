@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #120211;
+    font-family: 'Vast Shadow', cursive;
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.neon-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.text {
+    color: #fff;
+    font-size: 80px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.plus {
+    color: #fff;
+    font-size: 60px;
+    position: relative;
+}
+
+.text::before, .plus::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    filter: blur(15px);
+    animation: flicker 2s infinite alternate;
+}
+
+.text:nth-child(1)::before {
+    color: #ff65d4;
+}
+
+.plus::before {
+    color: #fff;
+}
+
+.text:nth-child(3)::before {
+    color: #65ff7c;
+}
+
+.enter-button {
+    margin-top: 30px;
+}
+
+.neon-button {
+    font-size: 24px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff65d4;
+    border: #ff65d4 2px solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em rgba(255, 101, 212, 0.55), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 #ff65d4, 0 0 0.5em 0 #ff65d4;
+    position: relative;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    background: #ff65d4;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1.2em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1.15em);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    color: #120211;
+    background-color: #ff65d4;
+    text-shadow: none;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 0.95;
+    }
+    20%, 22%, 24%, 55% {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 40px;
+    }
+    .plus {
+        font-size: 30px;
+    }
+    .neon-button {
+        font-size: 18px;
+    }
+}
