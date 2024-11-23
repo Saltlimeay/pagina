@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salt + Lime | Gallery</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/popup-menu.css">
+    <link rel="stylesheet" href="styles/category-menu-popup.css">
     <link rel="stylesheet" href="styles/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/dessert-popup.css">
+    <link rel="stylesheet" href="styles/events-popup.css">
 </head>
 <body>
+    <!-- Keep your existing header -->
     <header>
         <nav class="neon-nav">
             <div class="nav-container">
                 <ul class="nav-left">
                     <li><a href="index.html" class="neon-link">Home</a></li>
-                    <li><a href="#menu" class="neon-link">Menu</a></li>
-                    <li><a href="#reserve" class="neon-link">Reserve</a></li>
+                    <li><a href="index.html#menu" class="neon-link">Menu</a></li>
+                    <li><a href="index.html#reserve" class="neon-link">Reserve</a></li>
                 </ul>
                 <div class="logo-section">
-                    <img src="Images/singlelogo.png" alt="Salt + Lime Logo" class="logo">
+                    <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
                 </div>
                 <ul class="nav-right">
-                    <li><a href="shop.html" class="neon-link">Shop</a></li>
+                    <li><a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank">Shop</a></li>
                     <li><a href="gallery.html" class="neon-link">Gallery</a></li>
                     <li><a href="our-story.html" class="neon-link">Our Story</a></li>
                 </ul>
@@ -29,6 +36,7 @@
         </nav>
     </header>
 
+    <!-- Add the gallery content -->
     <main>
         <section class="gallery-section">
             <h1>Gallery</h1>
@@ -56,23 +64,35 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Salt + Lime. All rights reserved.</p>
-    </footer>
-
-    <!-- Lightbox Modal -->
+    <!-- Add the lightbox modal -->
     <div id="lightbox" class="lightbox">
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
         <div id="caption"></div>
     </div>
 
-    <script src="scripts/gallery.js"></script>
-    
+    <!-- Keep your existing sticky footer -->
     <div class="sticky-footer">
-        <a href="#reserve" class="cta-button">Reserve a Table</a>
+        <a href="home.html#reserve" class="cta-button">Reserve a Table</a>
         <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
         <a href="#" class="cta-button" id="events-btn">Book an Event</a>
+    </div>
+
+    <!-- Include all scripts -->
+    <script src="scripts/home.js"></script>
+    <script src="scripts/popup-menu.js"></script>
+    <script src="scripts/category-menu-popup.js"></script>
+    <script src="scripts/events-popup.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <div id="events-popup" class="events-popup">
+        <div class="events-popup-content">
+            <button class="close-events-popup">&times;</button>
+            <h2>Private Events Bookings</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <a href="tel:8589257093">(858) 925-7093</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:saltandlimesd@gmail.com">saltandlimesd@gmail.com</a></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
