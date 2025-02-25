@@ -6,8 +6,8 @@
     <title>Salt + Lime | Gallery</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/popup-menu.css">
+    <link rel="stylesheet" href="styles/global.css">
+
     <link rel="stylesheet" href="styles/category-menu-popup.css">
     <link rel="stylesheet" href="styles/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -20,19 +20,37 @@
         <nav class="neon-nav">
             <div class="nav-container">
                 <ul class="nav-left">
-                    <li><a href="index.html" class="neon-link">Home</a></li>
-                    <li><a href="index.html#menu" class="neon-link">Menu</a></li>
-                    <li><a href="index.html#reserve" class="neon-link">Reserve</a></li>
+                    <li><a href="home.html" class="neon-link">Home</a></li>
+                    <li><a href="home.html#menu" class="neon-link">Menu</a></li>
+                    <li><a href="home.html#reserve" class="neon-link">Reserve</a></li>
                 </ul>
                 <div class="logo-section">
-                    <img src="Images/Logo salt and lime.png" alt="Salt + Lime Logo" class="logo">
+                    <a href="index.html">
+                        <img src="Images/Logo salt and lime.png" alt="Salt + Lime" class="logo">
+                    </a>
                 </div>
                 <ul class="nav-right">
                     <li><a href="https://stores.wallatees.com/salt_lime/shop/home" class="neon-link" target="_blank">Shop</a></li>
                     <li><a href="gallery.html" class="neon-link">Gallery</a></li>
-                    <li><a href="our-story.html" class="neon-link">Our Story</a></li>
+                    <li><a href="home.html#about" class="neon-link">Our Story</a></li>
                 </ul>
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="hamburger-icon"></span>
+                </button>
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const hamburgerMenu = document.querySelector('.hamburger-menu');
+                    const navLeft = document.querySelector('.nav-left');
+                    const navRight = document.querySelector('.nav-right');
+            
+                    hamburgerMenu.addEventListener('click', function() {
+                        navLeft.classList.toggle('active');
+                        navRight.classList.toggle('active');
+                        hamburgerMenu.classList.toggle('open');
+                    });
+                });
+            </script>
         </nav>
     </header>
 
@@ -70,17 +88,40 @@
         <img class="lightbox-content" id="lightbox-img">
         <div id="caption"></div>
     </div>
+    
+    <!-- DESSERT COUPON + POP UP -->
+    <div class="floating-coupon-button">
+        <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
+    </div>
+    <div id="dessert-popup" class="dessert-popup">
+        <div class="dessert-popup-content">
+            <button class="close-dessert-popup">&times;</button>
+            <h2>Get Your <span>Free Dessert</span></h2>
+            <p>Enter your contact information to receive your coupon for a free dessert</p>
+            <form id="dessert-form" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <input type="text" id="contact-info" required>
+                    <label for="contact-info">Email or Phone Number</label>
+                </div>
+                <button type="submit" class="submit-btn">Get your coupon</button>
+            </form>
+            <div id="success-message" class="success-message" style="display: none;">
+                Thanks! Your coupon code will be sent shortly.
+            </div>
+        </div>
+    </div>
+    <script src="scripts/dessert-popup.js"></script>
 
     <!-- Keep your existing sticky footer -->
     <div class="sticky-footer">
-        <a href="home.html#reserve" class="cta-button">Reserve a Table</a>
-        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order To-Go</a>
-        <a href="#" class="cta-button" id="events-btn">Book an Event</a>
+        <a href="#reserve" class="cta-button">Reserve <span>a table</span></a>
+        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order <span>To-Go</span></a>
+        <a href="#" class="cta-button" id="events-btn">Book <span>an event</span></a>
     </div>
 
     <!-- Include all scripts -->
     <script src="scripts/home.js"></script>
-    <script src="scripts/popup-menu.js"></script>
+
     <script src="scripts/category-menu-popup.js"></script>
     <script src="scripts/events-popup.js"></script>
     <script src="scripts/gallery.js"></script>
