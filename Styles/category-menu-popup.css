@@ -18,15 +18,18 @@
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
-    padding: 30px;
+    padding: 40px 30px 30px 30px;
     border-radius: 10px;
 }
 
 .close-category-menu {
     position: absolute;
-    top: 20px;
+    /* top: 20px;
     right: 20px;
-    font-size: 24px;
+    font-size: 24px; */
+    top: 5px;
+    right: 10px;
+    font-size: 34px;
     background: none;
     border: none;
     cursor: pointer;

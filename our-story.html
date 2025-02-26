@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/global.css">
 
     <link rel="stylesheet" href="styles/category-menu-popup.css">
-    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/story.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/dessert-popup.css">
     <link rel="stylesheet" href="styles/events-popup.css">
@@ -56,61 +56,33 @@
 
     <!-- Add the gallery content -->
     <main>
-        <section class="gallery-section">
-            <h1>Gallery</h1>
-            <div class="masonry">
-                <div class="masonry-item"><img src="Images/S&L_June 21-40.jpg" alt="Salud"></div>
-                <div class="masonry-item"><img src="Images/S&L_June 21-11.jpg" alt="Yummy Tostadas"></div>
-                <div class="masonry-item"><img src="Images/pina coco.jpeg" alt="Put the lime in the coconut"></div>
-                <div class="masonry-item"><img src="Images/la rosa.jpeg" alt="La Rosa"></div>
-                <div class="masonry-item"><img src="Images/S&L_June 21-37.jpg" alt="White Mole Mushroom"></div>
-                <div class="masonry-item"><img src="Images/IMG_8310.jpeg" alt="Nothing beats Del Mar susnsets"></div>
-                <div class="masonry-item"><img src="Images/IMG_1417.jpeg" alt="I'll take a shot and a chaser"></div>
-                <div class="masonry-item"><img src="Images/IMG_6040.jpeg" alt="Our food truck parked at home base"></div>
-                <div class="masonry-item"><img src="Images/IMG_6204.jpeg" alt="Contrast"></div>
-                <div class="masonry-item"><img src="Images/IMG_6253.jpeg" alt="Staying Hydrated"></div>
-                <div class="masonry-item"><img src="Images/IMG_6398.jpeg" alt="Ideal date spot"></div>
-                <div class="masonry-item"><img src="Images/IMG_6410.jpeg" alt="This is what we call a Fiesta"></div>
-                <div class="masonry-item"><img src="Images/IMG_6511.jpeg" alt="No words needed"></div>
-                <div class="masonry-item"><img src="Images/IMG_6737.jpeg" alt="First music night ever held at the restaurant"></div>
-                <div class="masonry-item"><img src="Images/IMG_7053.jpeg" alt="The real mvp's"></div>
-                <div class="masonry-item"><img src="Images/IMG_7010.jpeg" alt="Our Buffett style event"></div>
-                <div class="masonry-item"><img src="Images/IMG_6891 2.jpeg" alt="These need to be at the table, not on the well"></div>
-                <div class="masonry-item"><img src="Images/IMG_6847.jpeg" alt="DJ night at Salt and lime"></div>
-                <div class="masonry-item"><img src="Images/IMG_6790.jpeg" alt="Definitely a great meal"></div>
-            </div>
+        <section class="story-section">
+            <h1>Our Story</h1>
+            <p>Our story coming soon here…</p>
         </section>
-    </main>
-
-    <!-- Add the lightbox modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="caption"></div>
-    </div>
-    
-    <!-- DESSERT COUPON + POP UP -->
-    <div class="floating-coupon-button">
-        <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
-    </div>
-    <div id="dessert-popup" class="dessert-popup">
-        <div class="dessert-popup-content">
-            <button class="close-dessert-popup">&times;</button>
-            <h2>Get Your <span>Free Dessert</span></h2>
-            <p>Enter your contact information to receive your coupon for a free dessert</p>
-            <form id="dessert-form" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <input type="text" id="contact-info" required>
-                    <label for="contact-info">Email or Phone Number</label>
+        <!-- DESSERT COUPON + POP UP -->
+        <div class="floating-coupon-button">
+            <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
+        </div>
+        <div id="dessert-popup" class="dessert-popup">
+            <div class="dessert-popup-content">
+                <button class="close-dessert-popup">&times;</button>
+                <h2>Get Your <span>Free Dessert</span></h2>
+                <p>Enter your contact information to receive your coupon for a free dessert</p>
+                <form id="dessert-form" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <input type="text" id="contact-info" required>
+                        <label for="contact-info">Email or Phone Number</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Get your coupon</button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    Thanks! Your coupon code will be sent shortly.
                 </div>
-                <button type="submit" class="submit-btn">Get your coupon</button>
-            </form>
-            <div id="success-message" class="success-message" style="display: none;">
-                Thanks! Your coupon code will be sent shortly.
             </div>
         </div>
-    </div>
-    <script src="scripts/dessert-popup.js"></script>
+        <script src="scripts/dessert-popup.js"></script>
+    </main>
 
     <!-- Keep your existing sticky footer -->
     <div class="sticky-footer">
