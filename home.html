@@ -57,20 +57,22 @@
 
     <main>
         <section id="home" class="hero">
-            <!-- <div class="video-container">
-                <iframe 
-                    class="hero-video"
-                    src="https://www.youtube.com/embed/sEx_9juJKdk?autoplay=1&mute=1&loop=1&playlist=sEx_9juJKdk&controls=0&rel=0&"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div> -->
-            <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/nrtwibnsqa.js" async type="module"></script><style>wistia-player[media-id='nrtwibnsqa']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nrtwibnsqa/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="nrtwibnsqa" aspect="1.7777777777777777"></wistia-player>
+            <!-- <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/nrtwibnsqa.js" async type="module"></script><style>wistia-player[media-id='nrtwibnsqa']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nrtwibnsqa/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="nrtwibnsqa" aspect="1.7777777777777777"></wistia-player> -->
+            <video autoplay loop muted playsinline poster="Images/hero-video-poster.png" class="hero-video">
+                <source src="https://saltlime-hero-video.hola-d31.workers.dev/" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+              
             
         </section>
+
         <div class="floating-coupon-button">
             <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
+        </div>
+        <div class="sticky-footer">
+            <a href="#reserve" class="cta-button">Reserve <span>a table</span></a>
+            <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order <span>To-Go</span></a>
+            <a href="#" class="cta-button" id="events-btn">Book <span>an event</span></a>
         </div>
         <section id="menu" class="menu-section">
             <h2>Our Menu</h2>
@@ -284,11 +286,7 @@
             <button type="submit" class="submit-btn">Send message</button>
         </form>
     </section>
-    <div class="sticky-footer">
-        <a href="#reserve" class="cta-button">Reserve <span>a table</span></a>
-        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order <span>To-Go</span></a>
-        <a href="#" class="cta-button" id="events-btn">Book <span>an event</span></a>
-    </div>
+
     
     <div id="dessert-popup" class="dessert-popup">
         <div class="dessert-popup-content">
