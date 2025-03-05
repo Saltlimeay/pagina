@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/dessert-popup.css">
     <link rel="stylesheet" href="styles/events-popup.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+          #mc_embed_signup{background:#fff; false; clear:left; font:14px Helvetica,Arial,sans-serif; width: 400px;}
+  </style>
 </head>
 <body>
     <!-- Keep your existing header -->
@@ -93,12 +97,28 @@
     <div class="floating-coupon-button">
         <a href="#" class="floating-button" id="dessert-coupon-btn">Free Dessert</a>
     </div>
-    <div id="dessert-popup" class="dessert-popup">
+<div id="dessert-popup" class="dessert-popup">
         <div class="dessert-popup-content">
             <button class="close-dessert-popup">&times;</button>
             <h2>Get Your <span>Free Dessert</span></h2>
             <p>Enter your contact information to receive your coupon for a free dessert</p>
-            <form id="dessert-form" method="POST" data-netlify="true">
+            <div id="mc_embed_shell">
+               
+          <div id="mc_embed_signup">
+              <form action="https://saltandlimesd.us16.list-manage.com/subscribe/post?u=d980bb64f6db80338e9418a8e&amp;id=d8ceab3e98&amp;f_id=00721ce1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                  <div id="mc_embed_signup_scroll">
+                      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                      <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-PHONE">Phone Number </label><input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div>
+                  <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display: none;"></div>
+                      <div class="response" id="mce-success-response" style="display: none;"></div>
+                  </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_d980bb64f6db80338e9418a8e_d8ceab3e98" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button submit-btn" value="Subscribe"></div>
+              </div>
+          </form>
+          </div>
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PHONE';ftypes[4]='phone';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+          
+            <!-- <form id="dessert-form" method="POST" data-netlify="true">
                 <div class="form-group">
                     <input type="text" id="contact-info" required>
                     <label for="contact-info">Email or Phone Number</label>
@@ -107,16 +127,20 @@
             </form>
             <div id="success-message" class="success-message" style="display: none;">
                 Thanks! Your coupon code will be sent shortly.
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="scripts/dessert-popup.js"></script>
 
     <!-- Keep your existing sticky footer -->
     <div class="sticky-footer">
-        <a href="#reserve" class="cta-button">Reserve <span>a table</span></a>
-        <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order <span>To-Go</span></a>
-        <a href="#" class="cta-button" id="events-btn">Book <span>an event</span></a>
+        <a href="#reserve" class="cta-button">Reserve <span>a Table</span></a>
+        <!-- <a href="https://www.toasttab.com/local/order/salt-lime-1201-camino-del-mar-suite-101/r-e9544194-9a54-477f-b240-1adee214375c" class="cta-button" target="_blank">Order <span>To-Go</span></a> -->
+        <a href="https://www.toasttab.com/salt-lime-1201-camino-del-mar-suite-101/v3" class="cta-button
+        " target="_blank"><img src="Images/order-on-toast.png" alt="Order on Toast" height="30"></a>
+        <a href="https://www.ubereats.com/store/salt-and-lime-del-mar/7poLs7Q7XxW3pTLOjnkBfw?diningMode=DELIVERY" class="cta-button
+        " target="_blank"><img src="Images/order-uber-eats.png" alt="Order on Uber Eats" height="30"></a>
+        <a href="#" class="cta-button" id="events-btn">Book <span>an Event</span></a>
     </div>
 
     <!-- Include all scripts -->

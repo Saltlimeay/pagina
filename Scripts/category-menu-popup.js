@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
          },
         cocktails: {
-            title: "Cocktails",
+            title: "Signature Cocktails",
             image: "Images/Screenshot 2024-10-24 at 11.42.22.png",
             items: [
                 {
